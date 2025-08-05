@@ -314,6 +314,55 @@
   font-weight: 600;
 }
 
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .main-navbar {
+    flex-direction: column; /* Xếp dọc */
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .main-navbar .logo img {
+    height: 50px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap; /* Cho nút xuống dòng nếu không đủ chỗ */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .nav-buttons a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .search-bar {
+    width: 100%; /* Chiếm hết chiều ngang */
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    width: 60%; /* Thu hẹp trên mobile */
+    font-size: 13px;
+  }
+
+  .dashboard-button {
+    gap: 10px;
+  }
+
+  .dashboard-button i {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  /* Dropdown chiếm hết chiều ngang khi mở */
+  .dropdown-menu {
+    min-width: 150px;
+  }
+}
+
 
 /* ========== CĂN LỀ SẢN PHẨM ========== */
 .new-product {
